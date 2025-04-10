@@ -17,9 +17,14 @@
             key-positions = <0 1>;
         };
 
-        ToLayer3 {
+        CAPLOCK {
+            bindings = <&kp CAPS>;
+            key-positions = <36 37>;
+        };
+
+        LAYER3 {
             bindings = <&to 3>;
-            key-positions = <38 41>;
+            key-positions = <38 39>;
         };
     };
 
@@ -49,10 +54,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp N1  &kp N2  &kp N3           &kp N4    &kp N5     &kp N6            &kp N7                &kp N8     &kp N9    &kp N0      &kp MINUS          &kp EQUAL
-&trans  &trans  &kp PRINTSCREEN  &kp DEL   &kp HOME   &kp END           &trans                &trans     &kp SEMI  &kp APOS    &kp C_VOLUME_UP    &kp LBKT
-&trans  &trans  &trans           &kp CAPS  &mkp LCLK  &msc SCRL_DOWN    &mkp RCLK             &kp COMMA  &kp DOT   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp RBKT
-                                 &trans    &trans     &trans            &kp NON_US_BACKSLASH  &kp GRAVE  &kp ESC
+&kp N1  &kp N2  &kp N3           &kp N4    &kp N5        &kp N6            &kp N7                &kp N8     &kp N9    &kp N0      &kp MINUS          &kp EQUAL
+&trans  &trans  &kp PRINTSCREEN  &kp DEL   &kp HOME      &kp END           &trans                &trans     &kp SEMI  &kp APOS    &kp C_VOLUME_UP    &kp LBKT
+&trans  &trans  &trans           &mkp MB1  &msc SCRL_UP  &msc SCRL_DOWN    &mkp MB2              &kp COMMA  &kp DOT   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp RBKT
+                                 &trans    &trans        &trans            &kp NON_US_BACKSLASH  &kp GRAVE  &kp ESC
             >;
         };
 
@@ -73,10 +78,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans    &kp UP    &trans     &sys_reset  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans     &trans      &trans    &trans  &trans  &trans
+&trans  &trans    &kp UP    &trans     &sys_reset   &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_UP  &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans       &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans       &trans           &trans  &trans  &trans
             >;
         };
     };
