@@ -21,9 +21,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T          &kp Y      &kp U     &kp I      &kp O      &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F         &kp G          &kp H      &kp J     &kp K      &kp L      &kp SEMI  &kp APOS
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V         &kp B          &kp B      &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH
+&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T          &kp Y      &kp U     &kp I      &kp O     &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F         &kp G          &kp H      &kp J     &kp K      &kp L     &kp UP    &kp FSLH
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V         &kp B          &kp B      &kp N     &kp M      &kp LEFT  &kp DOWN  &kp DOWN
                               &kp LEFT_WIN  &mt LALT ESC  &lt 1 SPACE    &kp ENTER  &kp HOME  &lt 2 END
             >;
         };
@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp N1  &kp N2    &kp N3  &kp N4    &kp N5     &kp N6             &kp N7                &kp N8            &kp N9             &kp N0    &kp MINUS          &kp EQUAL
-&trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &kp DEL            &trans                &trans            &kp SEMI           &kp APOS  &kp C_VOLUME_UP    &kp GRAVE
-&trans  &trans    &trans  &kp CAPS  &trans     &kp PRINTSCREEN    &trans                &kp COMMA         &kp DOT            &trans    &kp C_VOLUME_DOWN  &kp C_MUTE
-                          &trans    &trans     &trans             &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp N1  &kp N2    &kp N3    &kp N4    &kp N5     &kp N6             &kp N7                &kp N8            &kp N9             &kp N0    &kp MINUS          &kp EQUAL
+&trans  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp DEL            &trans                &trans            &kp SEMI           &kp APOS  &kp C_VOLUME_UP    &kp GRAVE
+&trans  &trans    &trans    &kp CAPS  &trans     &kp PRINTSCREEN    &trans                &kp COMMA         &kp DOT            &trans    &kp C_VOLUME_DOWN  &kp C_MUTE
+                            &trans    &trans     &trans             &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
         };
 
